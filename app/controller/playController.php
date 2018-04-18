@@ -1,10 +1,10 @@
 <?php
   require '../app/model/homeModel.php';
-  class entercodeController extends Controller{
+  class playController extends Controller{
       public static function get($param){
-        $title = "Huggy | Login";
+        $title = "Huggy | Play";
         require_once('../app/template/head.phtml');
-        require_once('../app/view/entercode/body.phtml');
+        require_once('../app/view/play/body.phtml');
         require_once('../app/template/foot.phtml');
 
       }

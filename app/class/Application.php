@@ -20,14 +20,14 @@
                 $controllerfunction = $this->method;
                 $controller = $controllername::$controllerfunction($this->param);
             } else {
-                require_once '../app/controller/homeController.php';
-                $controller = homeController::get($this->controller);
+                require_once '../app/controller/entercodeController.php';
+                $controller = entercodeController::get($this->controller);
             }
         }
 
         private function urlParse(){
             if(!isset($_GET['url'])){
-                $url = "home";
+                $url = "entercode";
                 $this->method = $_SERVER['REQUEST_METHOD'];
                 $this->controller = $url[0];
                 $this->param = array();
