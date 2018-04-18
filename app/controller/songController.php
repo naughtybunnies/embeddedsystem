@@ -1,10 +1,9 @@
-//มะใช้งาบ//
 <?php
   require '../app/model/homeModel.php';
-  class recentController extends Controller{
+  class songController extends Controller{
       public static function get($param){
         require_once('../app/template/head.phtml');
-        require_once('../app/view/recent/body.phtml');
+        require_once('../app/view/song/body.phtml');
         require_once('../app/template/foot.phtml');
 
       }
