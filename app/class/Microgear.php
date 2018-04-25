@@ -4,7 +4,7 @@
     {
         private $appkey = null;
         private $appsecret = null;
-        private $url = "https://api.netpie.io/microgear/smartfinger/";
+        private $url = "https://api.netpie.io/microgear/huggy/NodeMCU";
         private $ch;
 
         public function __construct($appkey, $appsecret){
@@ -14,7 +14,7 @@
 
         }
 
-        public function turnOn(){
+        public function play($mp3url){
             try{
                 $this->ch = curl_init();
                 curl_setopt($this->ch, CURLOPT_URL, "$this->url");
@@ -28,6 +28,10 @@
                 return $e->getMessage();
             }
 
+        }
+
+        public function getURL(){
+          return $this->url;
         }
 
         public function turnOff(){
