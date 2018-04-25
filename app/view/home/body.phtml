@@ -13,11 +13,11 @@
               <tr>
                 <nav class="level is-mobile">
                   <div class="level-item has-text-centered">
-                    <td>Song1</td>
+                    <td><?php echo $_SESSION["recently"] ?></td>
                   </div>
                   <div class="level-item has-text-centered">
                     <td>
-                      <a href="play">
+                      <a href="/play/<?php echo $_SESSION["recently"]; ?>">
                         <span class="icon has-text-danger">
                         <i class="fas fa-play"></i>
                       </a>
