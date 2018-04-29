@@ -9,8 +9,8 @@
                 require_once('../app/view/dashboard/body.phtml');
             }else{
                 require '../app/class/Microgear.php';
-                $appkey = "dNh5EsTkW8QWYPJ";
-                $appsecret = "sy43FWmqFUamPK3jQe5BZmXG4";
+                $appkey = "q8zDPIDchqxRSwk";
+                $appsecret = "Ug33YdGnjH46YUjKcY27bBWbW";
 
                 $mygear = new Microgear($appkey, $appsecret);
                 $function_name =$param[0];
