@@ -13,7 +13,19 @@
               <tr>
                 <nav class="level is-mobile">
                   <div class="level-item has-text-centered">
-                    <td><?php echo $_SESSION["recently"] ?></td>
+                    <td>
+                    <?php
+                    if (isset($_SESSION["recently"] ))
+                    {
+                      echo $_SESSION["recently"];
+                    }
+                    else
+                    {
+                      $_SESSION["recently"] = "spa";
+                      echo $_SESSION["recently"];
+                    }
+                    ?>
+                  </td>
                   </div>
                   <div class="level-item has-text-centered">
                     <td>
